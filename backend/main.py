@@ -49,10 +49,7 @@ app = FastAPI(title="Media Processing App API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://media-processing-app-psi.vercel.app",
-    ],
+    allow_origins=["*"],  # TEMP (for fix)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
