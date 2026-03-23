@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_BASE_URL = "http://127.0.0.1:8000/process";
+const API_BASE_URL = "https://media-processing-backend-hc8v.onrender.com/process";
 const EXAMPLE_URL = "https://samplelib.com/lib/preview/mp4/sample-5s.mp4";
 
 const operationOptions = [
