@@ -164,6 +164,10 @@ https://samplelib.com/lib/preview/mp4/sample-5s.mp4
 * Drag-and-drop upload support
 
 ---
+## Live Demo
+
+Frontend: https://media-processing-app-eak4.vercel.app/  
+Backend: https://media-processing-backend-hc8v.onrender.com/docs
 
 ## 👩‍💻 Author
 
