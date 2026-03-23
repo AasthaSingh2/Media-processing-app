@@ -49,7 +49,9 @@ app = FastAPI(title="Media Processing App API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # TEMP (for fix)
+    allow_origins=[
+        "https://media-processing-app-eak4.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
