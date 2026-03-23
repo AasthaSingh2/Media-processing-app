@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-const API_BASE_URL = "https://media-processing-backend-hc8v.onrender.com/process";
 const EXAMPLE_URL = "https://samplelib.com/lib/preview/mp4/sample-5s.mp4";
 
 const operationOptions = [
@@ -102,15 +101,12 @@ function App() {
     setResult(null);
 
     try {
-      const response = await fetch(API_BASE_URL, {
+      const response = await fetch("https://media-processing-backend-hc8v.onrender.com/process", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-          url: url.trim(),
-          operation,
-        }),
+        body: JSON.stringify({ url, operation })
       });
 
       const data = await response.json();
